@@ -14,4 +14,4 @@ stow vim zsh  # any available module you want
 
 ## Customization
 
-Each dotfile should be customizable by a local file having the same name, prefixed by `-local`.
+Each dotfile should be customizable by a local file having the same name, suffixed by `-local`.
