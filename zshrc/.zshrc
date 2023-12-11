@@ -24,6 +24,9 @@ alias please="sudo"
 if [[ -f /usr/share/Modules/init/zsh ]]
 then
     source /usr/share/Modules/init/zsh
+elif [[ -f /usr/share/modules/init/zsh ]]
+then
+    source /usr/share/modules/init/zsh
 fi
 
 # Local directories
@@ -37,3 +40,4 @@ if [[ -f $HOME/.zshrc-local ]]
 then
     source $HOME/.zshrc-local
 fi
+
