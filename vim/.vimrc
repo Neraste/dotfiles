@@ -118,6 +118,6 @@ set t_Co=256
 " ---------------------------
 " Local config
 
-if filereadable(expand('~/.vimrc-local'))
+if filereadable(expand('~/.vimrc-local')) && empty($DOTFILE_SOURCED)
     exe 'source' '~/.vimrc-local'
 endif

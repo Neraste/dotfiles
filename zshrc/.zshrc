@@ -36,8 +36,7 @@ export CPATH=$HOME/.local/include:$CPATH
 export MANPATH=$HOME/.local/man:$MANPATH
 
 # Local configuration
-if [[ -f $HOME/.zshrc-local ]]
+if [[ -f "$HOME/.zshrc-local" ]] && [[ -z "$DOTFILE_SOURCED" ]]
 then
-    source $HOME/.zshrc-local
+    source "$HOME/.zshrc-local"
 fi
-
